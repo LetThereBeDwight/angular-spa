@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+// import {
+// stuff
+// } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
     title = 'angular-spa';
@@ -11,7 +14,7 @@ export class AppComponent {
 
 @Component({
   templateUrl: './templates/home.component.html',
-  styleUrls: ['./app.component.scss']
+  animations: [],
 })
 export class HomeComponent {
     title = 'Home';
@@ -20,7 +23,6 @@ export class HomeComponent {
 
 @Component({
   templateUrl: './templates/resume.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class ResumeComponent {
     title = 'Resume';
@@ -28,7 +30,6 @@ export class ResumeComponent {
 
 @Component({
   templateUrl: './templates/resume.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class CodeComponent {
     title = 'Code';
@@ -36,7 +37,6 @@ export class CodeComponent {
 
 @Component({
   templateUrl: './templates/resume.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class FunComponent {
     title = 'Fun';
