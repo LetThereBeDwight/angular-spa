@@ -42,15 +42,15 @@ html {
 .logo {
     display: inline-block;
     background-color: $color-base02;
-    color: $color-base1;
-    border: 0.2rem solid $color-base1;
+    color: $color-base0;
+    border: 0.2rem solid $color-base0;
     font-family: monospace;
     font-weight: lighter;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     margin: 0;
 }.logo:hover {
-      color: $color-orange;
-      border-color: $color-orange;
+      color: $color-base2;
+      border-color: $color-base2;
 }.logo.title {
       margin-bottom: 3rem;
       padding: 0.3rem 3rem;
@@ -73,9 +73,10 @@ html {
     transition: all 0.5s ease;
     padding: 0.5rem 0.5rem;
     margin-right: 1.5rem;
+    text-decoration: none;
 }.button:hover {
-    color: $color-yellow;
-    border-color: $color-yellow;
+    color: $color-orange;
+    border-color: $color-orange;
 }.pages .button:last-child {
     margin-right: 0;
 }
