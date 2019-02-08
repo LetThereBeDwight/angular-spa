@@ -20,6 +20,11 @@ export class HomeComponent {
     title = 'Home';
 }
 
+@Component({
+  selector: 'app-toolbar',
+  templateUrl: './templates/toolbar.component.html',
+})
+export class ToolBarComponent {}
 
 @Component({
   templateUrl: './templates/resume.component.html',
