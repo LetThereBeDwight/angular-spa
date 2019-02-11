@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule, MatListModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -10,7 +11,7 @@ import { AppComponent,
          FunComponent,
          HomeComponent,
          ResumeComponent,
-         TopNavComponent,
+         NavComponent,
 } from './app.component';
 
 @NgModule({
@@ -20,12 +21,14 @@ import { AppComponent,
     FunComponent,
     HomeComponent,
     ResumeComponent,
-    TopNavComponent,
+    NavComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    MatExpansionModule,
+    MatListModule,
   ],
   bootstrap: [ AppComponent ],
 })

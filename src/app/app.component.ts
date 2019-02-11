@@ -1,5 +1,4 @@
-import { Component, AfterContentInit } from '@angular/core';
-import { fadeAnimation } from './animations';
+import { AfterContentInit, Component, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,37 +11,45 @@ export class AppComponent {
 
 @Component({
   selector: 'app-topnav',
-  templateUrl: './templates/topnav.component.html',
-  animations: [fadeAnimation],
+  templateUrl: './templates/nav.component.html',
 })
-export class TopNavComponent {
+export class NavComponent {
   static active = 'home';
-  static activeTextColor = '#268bd2';
-  static activeBorderStyle = '0.1rem solid '.concat(TopNavComponent.activeTextColor);
+  static activeTextColor = '#6c71c4';
+  static activeBorderStyle = '0.1rem solid '.concat(NavComponent.activeTextColor);
 
   static setActive(title: any): any {
-    TopNavComponent.active = title;
+    NavComponent.active = title;
+
     const activeLink = document.getElementById(title);
     if (activeLink) {
-      activeLink.style.color = TopNavComponent.activeTextColor;
-      activeLink.style.border = TopNavComponent.activeBorderStyle;
+      activeLink.style.color = NavComponent.activeTextColor;
+      activeLink.style.border = NavComponent.activeBorderStyle;
     }
+  }
+
+  scrollToTop() {
+      (function smoothscroll() {
+          const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentScroll > 0) {
+              window.requestAnimationFrame(smoothscroll);
+              window.scrollTo(0, currentScroll - (currentScroll / 8));
+          }
+      })();
   }
 }
 
 @Component({
   templateUrl: './templates/home.component.html',
 })
-export class HomeComponent {
-    title = 'home';
-}
+export class HomeComponent {}
 
 @Component({})
 abstract class BaseComponent implements AfterContentInit {
     abstract title;
 
     ngAfterContentInit() {
-      TopNavComponent.setActive(this.title);
+      NavComponent.setActive(this.title);
     }
 }
 
@@ -50,19 +57,88 @@ abstract class BaseComponent implements AfterContentInit {
   templateUrl: './templates/resume.component.html',
 })
 export class ResumeComponent extends BaseComponent {
-    title = 'resume';
+  title = 'Resume';
+
+  LANGUAGES = [
+    'C/C++/C++11',
+    'Python',
+    'Javascript/Typescript',
+    'Java',
+    'C#',
+    'HTML',
+    'CSS/SASS/SCSS',
+  ];
+
+  APIS_LIBRARIES_FRAMEWORKS = [
+    'STL',
+    'Boost',
+    'AWS',
+    'GDAL',
+    'GEOS',
+    'OpenCV',
+    'ASF',
+    'Swing',
+    'Bootstrap',
+    'CUDA',
+    'Angular',
+    'VueJS',
+    'Node.js',
+  ];
+
+  TOOLS = [
+    'Git',
+    'GitHub',
+    'BitBucket',
+    'JIRA',
+    'Visual Studio',
+    'SVN',
+    'Mercurial',
+    'Make/CMake',
+    'GDB',
+    'Valgrind',
+    'AutoConf',
+    'Powershell',
+    'Bash',
+  ];
+
+  DATABASES = [
+    'PostgresSQL',
+    'MySQL',
+    'JDBC',
+    'Access/SQLServer'
+  ];
+
+  OPERATING_SYSTEMS = [
+    'Linux - Ubuntu, RedHat, and CentOS',
+    'Windows',
+    'MacOS',
+  ];
+
+  METHODOLOGIES = [
+    'Iterative Development',
+    'Agile Development',
+    'Test-Driven Development',
+    'Feature-Driven Development',
+    'Object Oriented Development',
+    'Functional Development',
+  ];
+
+  RESUME_FORMATS = [
+    'PDF',
+    'DOCX',
+  ];
 }
 
 @Component({
   templateUrl: './templates/resume.component.html',
 })
 export class CodeComponent extends BaseComponent {
-    title = 'code';
+    title = 'Code';
 }
 
 @Component({
   templateUrl: './templates/resume.component.html',
 })
 export class FunComponent extends BaseComponent {
-    title = 'fun_stuff';
+    title = 'Fun Stuff';
 }

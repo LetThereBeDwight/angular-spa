@@ -37,9 +37,30 @@ html {
 }.container.vertically-center {
     height: 90vh;
     align-items: center;
-}.container.top-fifth {
-    height: 20vh;
+}.container.top-title {
+    margin: 2vh 0vw;
     align-items: center;
+}
+
+.topnav {
+    position: relative;
+}.topnav .button {
+    display: inline-block;
+    background-color: $color-base02;
+    color: $color-base01;
+    border: 0.1rem solid $color-base01;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.75rem;
+    text-decoration: none;
+}.topnav:hover {
+    color: $color-orange;
+    border-color: $color-orange;
+}.topnav .button:last-child {
+    margin-right: 0;
 }
 
 .logo {
@@ -51,40 +72,19 @@ html {
     font-weight: lighter;
     transition: all 0.7s ease;
     margin: 0;
-}.logo.home_title {
+}.logo.home-title {
     margin-bottom: 3rem;
     padding: 0.3rem 3rem;
     font-size: 7rem;
-}.logo.home_title:hover {
+}.logo.home-title:hover {
     color: $color-base3;
     border-color: $color-base3;
-}.logo.page_title {
+}.logo.page-title {
     padding: 0.3rem 3rem;
     font-size: 4rem;
-}
-
-.topnav {
-    position: fixed;
-    height: 10vh;
-}.topnav .button {
-    display: inline-block;
-    background-color: $color-base02;
-    color: $color-base01;
-    border: 0.1rem solid $color-base01;
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: 2rem;
-    flex-grow: 1;
-    flex-basis: 20%;
-    transition: all 0.3s ease;
-    padding: 0.5rem 0.5rem;
-    margin-right: 0.75rem;
-    text-decoration: none;
-}.topnav:hover {
-    color: $color-orange;
-    border-color: $color-orange;
-}.topnav .button:last-child {
-    margin-right: 0;
+    font-weight: normal;
+    color: $color-base1;
+    border: 0.2rem solid $color-base1;
 }
 
 .pages {
@@ -128,4 +128,108 @@ html {
     color: $color-gmail-red;
 }.social .button:last-child {
     margin-right: 0;
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}.resume .item{
+    text-align: center;
+    background-color: $color-base02;
+    box-sizing: content-box;
+    width: 100%;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}.item.skills {
+    color: $color-cyan;
+    border: 0.2rem solid $color-cyan;
+}.item.skills .tech-skill-list {
+    font-size: 1rem;
+    color: $color-base1;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}.item.skills .tech-skill-list:last-child {
+    margin-bottom: 0;
+}.item.prof-background {
+    color: $color-magenta;
+    border: 0.2rem solid $color-magenta;
+}.item.prof-background .title-dates {
+    color: $color-base1;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}.item.prof-background .text-desc {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 0.3rem;
+    margin-bottom: 0.75rem;
+    color: $color-base0;
+}.item.edu-background {
+    color: $color-green;
+    border: 0.2rem solid $color-green;
+}.item.edu-background .school-dates {
+    color: $color-base1;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}.item.edu-background .text-desc {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: $color-base0;
+}.item.resume-downloads {
+    color: $color-blue;
+    border: 0.2rem solid $color-blue;
+}.resume .item:last-child {
+    margin-bottom: 0;
+}
+
+.resume-download-list {
+    font-size: 1rem;
+    color: $color-base1;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}.resume-download-list > button {
+    background-color: $color-base01;
+    border: none;
+    color: $color-base3;
+    padding: 1.0vh 1.0vw;
+    font-size: 1rem;
+    border-radius: 5%;
+}.resume-download-list > button:focus {
+    outline: none;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.sub-subtitle {
+    font-size: 1.25rem;
+    color: $color-yellow;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}.scroll-to-top > button {
+    background-color: $color-base01;
+    border: none;
+    color: $color-base3;
+    padding: 1.0vh 1.0vw;
+    font-size: 1rem;
+    border-radius: 5%;
+}.scroll-to-top > button:focus {
+    outline: none;
 }
