@@ -59,7 +59,7 @@ abstract class BaseComponent implements AfterContentInit {
 export class ResumeComponent extends BaseComponent {
   title = 'Resume';
 
-  LANGUAGES = [
+  readonly LANGUAGES = [
     'C/Embedded/C++/C++11',
     'Python',
     'Javascript/Typescript',
@@ -67,9 +67,9 @@ export class ResumeComponent extends BaseComponent {
     'C#',
     'HTML',
     'CSS/SASS/SCSS',
-  ];
+  ].sort();
 
-  APIS_LIBRARIES_FRAMEWORKS = [
+  readonly APIS_LIBRARIES_FRAMEWORKS = [
     'STL',
     'Boost',
     'AWS',
@@ -83,9 +83,9 @@ export class ResumeComponent extends BaseComponent {
     'Angular',
     'VueJS',
     'Node.js',
-  ];
+  ].sort();
 
-  TOOLS = [
+  readonly TOOLS = [
     'Git',
     'GitHub',
     'BitBucket',
@@ -100,34 +100,36 @@ export class ResumeComponent extends BaseComponent {
     'Powershell',
     'Bash/Sh',
     'Docker/docker-compose',
-  ];
+  ].sort();
 
-  DATABASES = [
+  readonly DATABASES = [
     'PostgresSQL',
     'MySQL',
     'JDBC',
     'Access/SQLServer'
-  ];
+  ].sort();
 
-  OPERATING_SYSTEMS = [
-    'Linux - Ubuntu, RedHat, and CentOS',
+  readonly OPERATING_SYSTEMS = [
+    'Ubuntu',
+    'RedHat',
+    'CentOS',
     'Windows',
     'MacOS',
-  ];
+  ].sort();
 
-  METHODOLOGIES = [
-    'Iterative Development',
-    'Agile Development',
-    'Test-Driven Development',
-    'Feature-Driven Development',
-    'Object Oriented Development',
-    'Functional Development',
-  ];
+  readonly METHODOLOGIES = [
+    'Iterative',
+    'Agile',
+    'Test-Driven',
+    'Feature-Driven',
+    'Object Oriented',
+    'Functional',
+  ].sort();
 
-  RESUME_FORMATS = [
+  readonly RESUME_FORMATS = [
     'PDF',
     'DOCX',
-  ];
+  ].sort();
 
   downloadResume() {
     console.log("here");

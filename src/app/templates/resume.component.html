@@ -33,9 +33,13 @@
                   Languages
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of LANGUAGES">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of LANGUAGES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
 
             <mat-expansion-panel>
@@ -44,9 +48,13 @@
                   APIs/Libraries/Frameworks
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of APIS_LIBRARIES_FRAMEWORKS">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of APIS_LIBRARIES_FRAMEWORKS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
           
             <mat-expansion-panel>
@@ -55,9 +63,13 @@
                   Databases
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of DATABASES">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of DATABASES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
 
             <mat-expansion-panel>
@@ -66,9 +78,13 @@
                   Tools and Etc.
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of TOOLS">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of TOOLS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
 
             <mat-expansion-panel>
@@ -77,9 +93,13 @@
                   Operating Systems
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of OPERATING_SYSTEMS">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of OPERATING_SYSTEMS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
 
             <mat-expansion-panel>
@@ -88,9 +108,13 @@
                   Methodologies
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-list class="tech-skill-list">
-                <mat-list-item *ngFor="let item of METHODOLOGIES">{{ item }}</mat-list-item>
-              </mat-list>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of METHODOLOGIES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
             </mat-expansion-panel>
           </mat-accordion>
         </mat-expansion-panel>
@@ -199,9 +223,11 @@
                       SAFEGARD
                     </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <p class="text-desc">
-                    STUFF
-                  </p>
+                  <div class="text-desc">
+                    <p>
+                      Working on SAFEGARD
+                    </p>
+                  </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
                   <mat-expansion-panel-header>
@@ -210,9 +236,11 @@
                       STORM
                     </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <p class="text-desc">
-                    STUFF
-                  </p>
+                  <div class="text-desc">
+                    <p>
+                      Working on STORM
+                    </p>
+                  </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
                   <mat-expansion-panel-header>
@@ -221,9 +249,11 @@
                       ExAMS
                     </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <p class="text-desc">
-                    STUFF
-                  </p>
+                  <div class="text-desc">
+                    <p>
+                      Working on ExAMS
+                    </p>
+                  </div>
                 </mat-expansion-panel>
               </mat-accordion>
             </mat-expansion-panel>
@@ -346,6 +376,6 @@
     </div>
   </mat-accordion>
 
-  <div style="color:white">TODO: Add buttons for download, fill out jobs, maybe add more tech skills, maybe add about me section?</div>
+  <div style="color:white">TODO: Add buttons for download, fill out jobs, maybe add more tech skills</div>
   <div style="color:white">FIXME: Grid the tech skills</div>
 </div>

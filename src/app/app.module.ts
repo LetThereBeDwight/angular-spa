@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatExpansionModule, MatListModule, MatIconModule } from '@angular/material';
+import { MatExpansionModule, MatGridListModule, MatListModule, MatIconModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,6 +28,7 @@ import { AppComponent,
     BrowserModule,
     BrowserAnimationsModule,
     MatExpansionModule,
+    MatGridListModule,
     MatIconModule,
     MatListModule,
   ],
