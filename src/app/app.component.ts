@@ -60,7 +60,7 @@ export class ResumeComponent extends BaseComponent {
   title = 'Resume';
 
   LANGUAGES = [
-    'C/C++/C++11',
+    'C/Embedded/C++/C++11',
     'Python',
     'Javascript/Typescript',
     'Java',
@@ -98,7 +98,8 @@ export class ResumeComponent extends BaseComponent {
     'Valgrind',
     'AutoConf',
     'Powershell',
-    'Bash',
+    'Bash/Sh',
+    'Docker/docker-compose',
   ];
 
   DATABASES = [
