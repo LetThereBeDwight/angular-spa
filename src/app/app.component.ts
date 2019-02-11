@@ -81,8 +81,10 @@ export class ResumeComponent extends BaseComponent {
     'Bootstrap',
     'CUDA',
     'Angular',
-    'VueJS',
-    'Node.js',
+    'Vue',
+    'Node',
+    'TensorFlow',
+    'Caffe',
   ].sort();
 
   readonly TOOLS = [
@@ -100,6 +102,8 @@ export class ResumeComponent extends BaseComponent {
     'Powershell',
     'Bash/Sh',
     'Docker/docker-compose',
+    'QGIS',
+    'Trello',
   ].sort();
 
   readonly DATABASES = [
