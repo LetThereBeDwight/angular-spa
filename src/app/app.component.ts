@@ -28,6 +28,10 @@ export class NavComponent {
     }
   }
 
+  get active() {
+    return NavComponent.active;
+  }
+
   scrollToTop() {
       (function smoothscroll() {
           const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -136,19 +140,19 @@ export class ResumeComponent extends BaseComponent {
   ].sort();
 
   downloadResume() {
-    console.log("here");
+    console.log('here');
   }
 }
 
 @Component({
-  templateUrl: './templates/resume.component.html',
+  templateUrl: './templates/code.component.html',
 })
 export class CodeComponent extends BaseComponent {
     title = 'Code';
 }
 
 @Component({
-  templateUrl: './templates/resume.component.html',
+  templateUrl: './templates/fun.component.html',
 })
 export class FunComponent extends BaseComponent {
     title = 'Fun Stuff';
