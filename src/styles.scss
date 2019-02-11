@@ -35,7 +35,7 @@ html {
     justify-content: center;
     text-align: center;
 }.container.vertically-center {
-    height: 100vh;
+    height: 90vh;
     align-items: center;
 }
 
@@ -66,7 +66,8 @@ html {
 }
 
 .topnav {
-    vertical-align: middle
+    position: fixed;
+    height: 10vh;
 }.topnav .button {
     display: inline-block;
     background-color: $color-base02;
