@@ -15,16 +15,15 @@ export class AppComponent {
 })
 export class NavComponent {
   static active = 'home';
-  static activeTextColor = '#6c71c4';
-  static activeBorderStyle = '0.1rem solid '.concat(NavComponent.activeTextColor);
+  static activeColor = '#6c71c4';
 
   static setActive(title: any): any {
     NavComponent.active = title;
 
     const activeLink = document.getElementById(title);
     if (activeLink) {
-      activeLink.style.color = NavComponent.activeTextColor;
-      activeLink.style.border = NavComponent.activeBorderStyle;
+      activeLink.style.color = NavComponent.activeColor;
+      activeLink.style.borderColor = NavComponent.activeColor;
     }
   }
 

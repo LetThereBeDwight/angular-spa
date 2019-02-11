@@ -73,23 +73,22 @@ html {
     transition: all 0.7s ease;
     margin: 0;
 }.logo.home-title {
+    color: $color-base3;
+    border-color: $color-base3;
     margin-bottom: 3rem;
     padding: 0.3rem 3rem;
     font-size: 7rem;
-}.logo.home-title:hover {
-    color: $color-base3;
-    border-color: $color-base3;
 }.logo.page-title {
     padding: 0.3rem 3rem;
     font-size: 4rem;
     font-weight: normal;
     color: $color-base1;
-    border: 0.2rem solid $color-base1;
+    border-color: $color-base1;
 }
 
 .pages {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }.pages .button {
     display: inline-block;
     background-color: $color-base02;
