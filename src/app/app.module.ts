@@ -10,7 +10,7 @@ import { AppComponent,
          FunComponent,
          HomeComponent,
          ResumeComponent,
-         ToolBarComponent,
+         TopNavComponent,
 } from './app.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { AppComponent,
     FunComponent,
     HomeComponent,
     ResumeComponent,
-    ToolBarComponent,
+    TopNavComponent,
   ],
   imports: [
     AppRoutingModule,

@@ -1,85 +1,68 @@
-import { Component } from '@angular/core';
-import {
-  transition,
-  trigger,
-  query,
-  style,
-  animate,
-  group,
-  animateChild
-} from '@angular/animations';
+import { Component, AfterContentInit } from '@angular/core';
+import { fadeAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
-  template: '<div [@animRoutes]="getPage(appOutlet)"><router-outlet #appOutlet="outlet"></router-outlet></div>',
+  templateUrl: './templates/app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger('animRoutes', [
-      transition('* <=> *', [
-        group([
-          query(
-            ':enter',
-            [
-              style({
-                opacity: 0,
-                transform: 'translateY(9rem) rotate(-10deg)'
-              }),
-              animate(
-                '0.35s cubic-bezier(0, 1.8, 1, 1.8)',
-                style({ opacity: 1, transform: 'translateY(0) rotate(0)' })
-              ),
-              animateChild()
-            ],
-            { optional: true }
-          ),
-          query(
-            ':leave',
-            [animate('0.35s', style({ opacity: 0 })), animateChild()],
-            { optional: true }
-          )
-        ])
-      ])
-    ])
-  ]
 })
 export class AppComponent {
     title = 'angular-spa';
+}
 
-    getPage(outlet) {
-      return outlet.activatedRouteData.page || 'one';
+@Component({
+  selector: 'app-topnav',
+  templateUrl: './templates/topnav.component.html',
+  animations: [fadeAnimation],
+})
+export class TopNavComponent {
+  static active = 'home';
+  static activeTextColor = '#268bd2';
+  static activeBorderStyle = '0.1rem solid '.concat(TopNavComponent.activeTextColor);
+
+  static setActive(title: any): any {
+    TopNavComponent.active = title;
+    const activeLink = document.getElementById(title);
+    if (activeLink) {
+      activeLink.style.color = TopNavComponent.activeTextColor;
+      activeLink.style.border = TopNavComponent.activeBorderStyle;
     }
+  }
 }
 
 @Component({
   templateUrl: './templates/home.component.html',
 })
 export class HomeComponent {
-    title = 'Home';
+    title = 'home';
 }
 
-@Component({
-  selector: 'app-toolbar',
-  templateUrl: './templates/toolbar.component.html',
-})
-export class ToolBarComponent {}
+@Component({})
+abstract class BaseComponent implements AfterContentInit {
+    abstract title;
 
-@Component({
-  templateUrl: './templates/resume.component.html',
-})
-export class ResumeComponent {
-    title = 'Resume';
+    ngAfterContentInit() {
+      TopNavComponent.setActive(this.title);
+    }
 }
 
 @Component({
   templateUrl: './templates/resume.component.html',
 })
-export class CodeComponent {
-    title = 'Code';
+export class ResumeComponent extends BaseComponent {
+    title = 'resume';
 }
 
 @Component({
   templateUrl: './templates/resume.component.html',
 })
-export class FunComponent {
-    title = 'Fun';
+export class CodeComponent extends BaseComponent {
+    title = 'code';
+}
+
+@Component({
+  templateUrl: './templates/resume.component.html',
+})
+export class FunComponent extends BaseComponent {
+    title = 'fun_stuff';
 }
