@@ -127,6 +127,10 @@ export class ResumeComponent extends BaseComponent {
     'PDF',
     'DOCX',
   ];
+
+  downloadResume() {
+    console.log("here");
+  }
 }
 
 @Component({

@@ -188,26 +188,21 @@ html {
     margin-bottom: 0.5rem;
     color: $color-base0;
 }.item.resume-downloads {
-    color: $color-blue;
-    border: 0.2rem solid $color-blue;
-}.resume .item:last-child {
-    margin-bottom: 0;
-}
-
-.resume-download-list {
-    font-size: 1rem;
-    color: $color-base1;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-}.resume-download-list > button {
-    background-color: $color-base01;
+    color: $color-base0;
+    border: 0.2rem solid $color-base0;
+}.item.resume-downloads button {
+    background-color: $color-base0;
     border: none;
     color: $color-base3;
     padding: 1.0vh 1.0vw;
     font-size: 1rem;
-    border-radius: 5%;
-}.resume-download-list > button:focus {
+    margin-right: 0.5rem;
+}.item.resume-downloads button:focus {
     outline: none;
+}.item.resume-downloads button:hover {
+    background-color: $color-blue;
+}.resume .item:last-child {
+    margin-bottom: 0;
 }
 
 .subtitle {
@@ -230,6 +225,10 @@ html {
     padding: 1.0vh 1.0vw;
     font-size: 1rem;
     border-radius: 5%;
+    transition: all 0.3s ease;
 }.scroll-to-top > button:focus {
     outline: none;
+}.scroll-to-top > button:hover {
+    background-color: $color-base0;
+    transition: all 0.3s ease;
 }

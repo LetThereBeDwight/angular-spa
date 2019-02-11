@@ -37,17 +37,6 @@
                   <mat-list-item *ngFor="let item of APIS_LIBRARIES_FRAMEWORKS">{{ item }}</mat-list-item>
                 </mat-list>
               </mat-expansion-panel>
-
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title class="subtitle">
-                    Tools
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <mat-list class="tech-skill-list">
-                  <mat-list-item *ngFor="let item of TOOLS">{{ item }}</mat-list-item>
-                </mat-list>
-              </mat-expansion-panel>
             
               <mat-expansion-panel>
                 <mat-expansion-panel-header>
@@ -57,6 +46,17 @@
                 </mat-expansion-panel-header>
                 <mat-list class="tech-skill-list">
                   <mat-list-item *ngFor="let item of DATABASES">{{ item }}</mat-list-item>
+                </mat-list>
+              </mat-expansion-panel>
+
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title class="subtitle">
+                    Tools and Etc.
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list class="tech-skill-list">
+                  <mat-list-item *ngFor="let item of TOOLS">{{ item }}</mat-list-item>
                 </mat-list>
               </mat-expansion-panel>
 
@@ -104,8 +104,10 @@
                 </mat-expansion-panel-header>
                 <p class="title-dates">Senior Software Developer [November 2016 - Current]</p>
                 <p class="text-desc">
-                  As a contractor for SurgeForward I've worked with a variety of clients to design and implement software specific to their unique needs.
-                  The role has given me a chance to see a variety of development and managerial styles, while allowing me to expand my technical repertoire.
+                  As a contractor for SurgeForward I've worked with a variety of clients to design and implement software specific to each of their unique needs.
+                </p>
+                <p class="text-desc">
+                  The role has given me an opportunity to see a variety of development and managerial styles, while allowing me to further expand my technical repertoire.
                 </p>
 
                 <mat-accordion multi="true" class=sub-subtitle>
@@ -202,15 +204,13 @@
               Downloads
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <mat-list>
-            <mat-list-item *ngFor="let item of RESUME_FORMATS" class="resume-download-list">
-                <button (click)="scrollToTop()">Download as {{ item }}</button>
-            </mat-list-item>
-          </mat-list>
+          <button *ngFor="let item of RESUME_FORMATS" (click)="downloadResume()">
+              Download as {{ item }}
+          </button>
         </mat-expansion-panel>
       </div>
     </div>
   </mat-accordion>
 
-  <div style="color:white">TODO: Add buttons for download, fill out jobs, maybe add more tech skills</div>
+  <div style="color:white">TODO: Add buttons for download, fill out jobs, maybe add more tech skills, maybe add about me section?</div>
 </div>
