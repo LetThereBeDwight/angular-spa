@@ -5,8 +5,8 @@
     <div class="resume">
       <div class="item edu-background">
         <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
             Educational Background
             </mat-panel-title>
           </mat-expansion-panel-header>
@@ -17,14 +17,14 @@
 
       <div class="item skills">
         <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
               Technical Skills
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-accordion multi="true">
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Languages
                 </mat-panel-title>
@@ -39,7 +39,7 @@
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   APIs/Libraries/Frameworks
                 </mat-panel-title>
@@ -54,7 +54,7 @@
             </mat-expansion-panel>
           
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Databases
                 </mat-panel-title>
@@ -69,7 +69,7 @@
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Tools and Etc.
                 </mat-panel-title>
@@ -84,7 +84,7 @@
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Operating Systems
                 </mat-panel-title>
@@ -99,7 +99,7 @@
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Methodologies
                 </mat-panel-title>
@@ -118,14 +118,14 @@
       
       <div class="item prof-background">
         <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
               Professional Background
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-accordion multi="true">
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   SurgeForward/Catalyte
                 </mat-panel-title>
@@ -140,10 +140,10 @@
                 </p>
               </div>
 
-              <mat-accordion multi="true" class=sub-subtitle>
+              <mat-accordion multi="true" class="sub-subtitle">
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       Surge Internal Development
                     </mat-panel-title>
@@ -156,8 +156,8 @@
                 </mat-expansion-panel>
 
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       Vorbeck Materials
                     </mat-panel-title>
@@ -170,8 +170,8 @@
                 </mat-expansion-panel>
 
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       Emory University/Emory Healthcare
                     </mat-panel-title>
@@ -184,23 +184,43 @@
                 </mat-expansion-panel>
 
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       DigitalGlobe/Radiant Solutions
                     </mat-panel-title>
                   </mat-expansion-panel-header>
                   <div class="text-desc">
                     <p>
-                      My time at DG
+                      Radiant Solutions(formerly DigitalGlobe) has built a GIS focused machine learning toolkit,(<a target="_blank" rel="noopener noreferrer" href="http://www.deepcore.io">DeepCore</a>),
+                      and I was happy to contribute to a really cool project.
                     </p>
+                    <p>
+                      The kit is written in C++11 and is designed as a one-stop shop for downloading imagery, performing image classification and/or object detection, and produce geospatial output in a variety of formats.
+                      During my time working on the project, I personally was able to:
+                    </p>
+
+                    <li style="margin-bottom:1vh">
+                      Design and implement geometric utilities acting as a bridge between GDAL, GEOS, and OpenCV.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Design and implement enhancements to the object detection and classification systems, including the addition
+                      of TensorFlow model support.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Enhance geographic Feature/FeatureSet handling to allow for further input/output capabilities for users.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Worked on a large overhaul of the processing module to allow for concurrent and asyncronous processing of the E2E pipeline -
+                      from retrieval of data all the way through to the resultant geo output.
+                    </li>
                   </div>
                 </mat-expansion-panel>
               </mat-accordion>
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Metron Scientific Solutions
                 </mat-panel-title>
@@ -208,13 +228,22 @@
               <p class="title-dates">Software Analyst and Architect [June 2011 - November 2016]</p>
               <div class="text-desc">
                 <p>
-                  My time at Metron
+                  Starting at Metron was incredibly exicting for me. Fresh out of school, with a job working on some pretty interesting problems.
+                  I was specifically brought on to work on the SAFEGARD project(see below) and over the course of my five years with Metron I went from
+                  being a junior developer on SAFEGARD, to managing the project entirely(with an occasional junior developer working for me).
+                </p>
+                <p>
+                  During this time, I was also able to procure further work for Metron through documenting the possibility additional features(and winning the proposals!),
+                  and also giving a helping hand when needed on some other projects.
+                </p>
+                <p>
+                  The projects I did the most appreciable work on are further detailed below:
                 </p>
               </div>
-              <mat-accordion multi="true" class=sub-subtitle>
+              <mat-accordion multi="true" class="sub-subtitle">
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       SAFEGARD
                     </mat-panel-title>
@@ -230,18 +259,18 @@
                     <p>
                       The simulation engine is written in C++, with Python(PLY) used to translate user input data,
                       Java used as a front end and 3D results playback tool(leveraging NASA WorldWind for an OpenGL globe display and panel),
-                      and dynamically generated HTML(leveraging NextReports Engine), in conjunction with jQuery and Javascript used for result output(stored within a PostgreSQL database). With such a small team, we all worked on nearly every module within the project.
+                      and dynamically generated HTML(leveraging NextReports Engine), in conjunction with jQuery and Javascript used for result output(stored within a PostgreSQL database). With such a small team, we all worked on nearly every module within the project - an effort that took the better part of five years.
                     </p>
                     <p>
-                      I was also asked to produce a module, to generate documentation for the vast amount of input data that SAFEGARD models require.
-                      This module leveraged the results output module already implemented(using NextReports Engine, dynamically generated HTML, jQuery, and Javascript)
+                      Later, after the release of version 1.0, I was asked to produce a module which generates documentation for the vast amount of input data that SAFEGARD models require.
+                      This module leveraged the results output module already implemented(using NextReports Engine, dynamically generated HTML, jQuery, and Javascript).
                       This effort greatly reduced analyst overhead time when designing a mission, and the effort was able to reuse most of the codebase for a similar documentation tool implemented for STORM.
                     </p>
                   </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       STORM
                     </mat-panel-title>
@@ -263,8 +292,8 @@
                   </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
                       <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                       ExAMS
                     </mat-panel-title>
@@ -287,7 +316,7 @@
             </mat-expansion-panel>
             
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Thomas Jefferson National Accelerator Facility
                 </mat-panel-title>
@@ -305,8 +334,8 @@
 
                 <mat-list class="sub-subtitle">
                     <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a Kalman filter
                         </mat-panel-title>
@@ -321,8 +350,8 @@
                       </div>
                     </mat-expansion-panel>
                     <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a cluster finding algorithm
                         </mat-panel-title>
@@ -337,8 +366,8 @@
                       </div>
                     </mat-expansion-panel>
                     <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a segment finding algorithm
                         </mat-panel-title>
@@ -357,7 +386,7 @@
             </mat-expansion-panel>
 
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+              <mat-expansion-panel-header collapsedHeight="auto">
                 <mat-panel-title class="subtitle">
                   Before It All Began(or How I Learned to Have a Job)
                 </mat-panel-title>
@@ -390,8 +419,8 @@
 
       <div class="item resume-downloads">
         <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
               Downloads
             </mat-panel-title>
           </mat-expansion-panel-header>
