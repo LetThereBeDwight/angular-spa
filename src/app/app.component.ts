@@ -73,7 +73,7 @@ export class ResumeComponent extends BaseComponent {
     'Java',
     'C#',
     'HTML',
-    'CSS/SASS/SCSS',
+    'CSS/SCSS',
   ].sort(caseInsensitiveSort);
 
   readonly APIS_LIBRARIES_FRAMEWORKS = [
@@ -93,7 +93,8 @@ export class ResumeComponent extends BaseComponent {
     'TensorFlow',
     'Caffe',
     'Bluetooth',
-    'jQuery'
+    'jQuery',
+    'Material',
   ].sort(caseInsensitiveSort);
 
   readonly TOOLS = [
@@ -134,8 +135,8 @@ export class ResumeComponent extends BaseComponent {
   readonly METHODOLOGIES = [
     'Iterative',
     'Agile',
-    'Test-Driven',
-    'Feature-Driven',
+    'Test Driven',
+    'Feature Driven',
     'Object Oriented',
     'Functional',
   ].sort(caseInsensitiveSort);
