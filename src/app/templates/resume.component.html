@@ -221,7 +221,21 @@
                   </mat-expansion-panel-header>
                   <div class="text-desc">
                     <p>
-                      Working on SAFEGARD
+                      SAFEGARD is a mission level warfare analysis application - naval, air, communications, and sensor assets were modeled with a high level of fidelity to assist in the procurement analysis process for the Navy.
+                    </p>
+                    <p>
+                      SAFEGARD was my first and longest lasting assignment at Metron - I was brought on to be a junior developer on what became a three developer team,
+                      and when I arrived the software design phase had just gotten underway, and the codebase was basically a CMake file. I was elated to be joining a project with a clean slate!
+                    </p>
+                    <p>
+                      The simulation engine is written in C++, with Python(PLY) used to translate user input data,
+                      Java used as a front end and 3D results playback tool(leveraging NASA WorldWind for an OpenGL globe display and panel),
+                      and dynamically generated HTML(leveraging NextReports Engine), in conjunction with jQuery and Javascript used for result output(stored within a PostgreSQL database). With such a small team, we all worked on nearly every module within the project.
+                    </p>
+                    <p>
+                      I was also asked to produce a module, to generate documentation for the vast amount of input data that SAFEGARD models require.
+                      This module leveraged the results output module already implemented(using NextReports Engine, dynamically generated HTML, jQuery, and Javascript)
+                      This effort greatly reduced analyst overhead time when designing a mission, and the effort was able to reuse most of the codebase for a similar documentation tool implemented for STORM.
                     </p>
                   </div>
                 </mat-expansion-panel>
@@ -234,7 +248,17 @@
                   </mat-expansion-panel-header>
                   <div class="text-desc">
                     <p>
-                      Working on STORM
+                      STORM is a campaign level warfare analysis application, that was something of the father to SAFEGARD - SAFEGARD being a less broad simulation with higher fidelity.
+                    </p>
+                    <p>
+                      Architecture and design of SAFEGARD borrowed very heavily from STORM, and after the release of SAFEGARD v1.0 I was brought on to STORM to make a few additions, leveraging my knowledge of SAFEGARD.
+                    </p>
+                    <p>
+                      The simulation engine is written in C++, and I was asked to produce high level design for a module that would model small boat swarms, and provide guidance to a junior developer on the implementation of the module.
+                    </p>
+                    <p>
+                      I was also asked to produce a documentation module, leveraging what had been written for SAFEGARD.
+                      The effort was able to reuse most of the codebase for the similar documentation tool designed for SAFEGARD. 
                     </p>
                   </div>
                 </mat-expansion-panel>
@@ -247,7 +271,15 @@
                   </mat-expansion-panel-header>
                   <div class="text-desc">
                     <p>
-                      Working on ExAMS
+                      ExAMS is an analysis tool(written in Java using the Spring Framework).
+                    </p>
+                    <p>
+                      The tool was used to organize the littany of different sources, formats, and types of data required at a generic level for many military simulations, and architected
+                      to easily allow for development of plugins to utilize those data sources in an abritrary simulation environment.
+                    </p>
+                    <p>
+                      I was brought on to design and develop a plugin to allow for data input from real life hardware, utilizing an HLA methodology.
+                      This plugin allowed for the input data from real life hardware to be passed into an arbitrary simulation environment and be utilized at arbitrary intervals/levels of fidelity.
                     </p>
                   </div>
                 </mat-expansion-panel>
@@ -271,10 +303,10 @@
                 </p>
                 <p>These efforts included the following:</p>
 
-                <mat-list style="font-weight:bold">
+                <mat-list class="sub-subtitle">
                     <mat-expansion-panel>
                       <mat-expansion-panel-header>
-                        <mat-panel-title style="font-weight:bold">
+                        <mat-panel-title>
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a Kalman filter
                         </mat-panel-title>
@@ -290,7 +322,7 @@
                     </mat-expansion-panel>
                     <mat-expansion-panel>
                       <mat-expansion-panel-header>
-                        <mat-panel-title style="font-weight:bold">
+                        <mat-panel-title>
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a cluster finding algorithm
                         </mat-panel-title>
@@ -306,7 +338,7 @@
                     </mat-expansion-panel>
                     <mat-expansion-panel>
                       <mat-expansion-panel-header>
-                        <mat-panel-title class="text-desc" style="font-weight:bold">
+                        <mat-panel-title>
                             <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
                             Implementation of a segment finding algorithm
                         </mat-panel-title>

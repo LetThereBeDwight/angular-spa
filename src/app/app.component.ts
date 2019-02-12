@@ -1,4 +1,8 @@
-import { AfterContentInit, Component, } from '@angular/core';
+import { OnInit, Component, } from '@angular/core';
+
+function caseInsensitiveSort(a, b) {
+  return a.localeCompare(b, 'en', {sensitivity: 'base'});
+}
 
 @Component({
   selector: 'app-root',
@@ -48,10 +52,10 @@ export class NavComponent {
 export class HomeComponent {}
 
 @Component({})
-abstract class BaseComponent implements AfterContentInit {
+abstract class BaseComponent implements OnInit {
     abstract title;
 
-    ngAfterContentInit() {
+    ngOnInit() {
       NavComponent.setActive(this.title);
     }
 }
@@ -70,7 +74,7 @@ export class ResumeComponent extends BaseComponent {
     'C#',
     'HTML',
     'CSS/SASS/SCSS',
-  ].sort();
+  ].sort(caseInsensitiveSort);
 
   readonly APIS_LIBRARIES_FRAMEWORKS = [
     'STL',
@@ -88,7 +92,9 @@ export class ResumeComponent extends BaseComponent {
     'Node',
     'TensorFlow',
     'Caffe',
-  ].sort();
+    'Bluetooth',
+    'jQuery'
+  ].sort(caseInsensitiveSort);
 
   readonly TOOLS = [
     'Git',
@@ -107,14 +113,15 @@ export class ResumeComponent extends BaseComponent {
     'Docker/docker-compose',
     'QGIS',
     'Trello',
-  ].sort();
+    'NextReports',
+  ].sort(caseInsensitiveSort);
 
   readonly DATABASES = [
     'PostgresSQL',
     'MySQL',
     'JDBC',
     'Access/SQLServer'
-  ].sort();
+  ].sort(caseInsensitiveSort);
 
   readonly OPERATING_SYSTEMS = [
     'Ubuntu',
@@ -122,7 +129,7 @@ export class ResumeComponent extends BaseComponent {
     'CentOS',
     'Windows',
     'MacOS',
-  ].sort();
+  ].sort(caseInsensitiveSort);
 
   readonly METHODOLOGIES = [
     'Iterative',
@@ -131,12 +138,12 @@ export class ResumeComponent extends BaseComponent {
     'Feature-Driven',
     'Object Oriented',
     'Functional',
-  ].sort();
+  ].sort(caseInsensitiveSort);
 
   readonly RESUME_FORMATS = [
     'PDF',
     'DOCX',
-  ].sort();
+  ].sort(caseInsensitiveSort);
 
   downloadResume() {
     console.log('here');
