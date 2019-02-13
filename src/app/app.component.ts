@@ -67,7 +67,7 @@ export class ResumeComponent extends BaseComponent {
   title = 'Resume';
 
   readonly LANGUAGES = [
-    'C/Embedded/C++/C++11',
+    'C/C++/C++11',
     'Python',
     'Javascript/Typescript',
     'Java',
@@ -139,6 +139,7 @@ export class ResumeComponent extends BaseComponent {
     'Feature Driven',
     'Object Oriented',
     'Functional',
+    'CI/CD',
   ].sort(caseInsensitiveSort);
 
   readonly RESUME_FORMATS = [
