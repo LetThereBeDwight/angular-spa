@@ -1,0 +1,20 @@
+<div>
+  <nav>
+    <div class="topnav">
+      <a routerLink="/home" class="button">DB</a>
+      <a routerLink="/code" class="button" id="Code">Code</a>
+      <a routerLink="/resume" class="button" id="Resume">Resume</a>
+      <a routerLink="/fun" class="button" id="Fun Stuff">Fun Stuff!</a>
+    </div>
+  </nav>
+
+  <div class="container center top-title">
+      <h1 class="logo page-title">{{active.toUpperCase()}}</h1>
+  </div>
+</div>
+
+<div class="scroll-to-top">
+  <button (click)="scrollToTop()">
+    <i class="fa fa-angle-double-up"></i>
+  </button>
+</div>

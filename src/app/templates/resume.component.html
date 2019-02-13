@@ -1,0 +1,478 @@
+<app-topnav></app-topnav>
+
+<div class="main">
+  <mat-accordion>
+    <div class="resume">
+      <div class="item skills">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
+              Technical Skills
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-accordion multi="true">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Languages
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of LANGUAGES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  APIs/Libraries/Frameworks
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of APIS_LIBRARIES_FRAMEWORKS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+          
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Databases
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of DATABASES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Tools and Etc.
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of TOOLS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Operating Systems
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of OPERATING_SYSTEMS">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Methodologies
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-grid-list cols="3" rowHeight="3vh">
+                <mat-grid-tile
+                  class="tech-skill-list"
+                  *ngFor="let item of METHODOLOGIES">
+                  {{ item }}
+                </mat-grid-tile>
+              </mat-grid-list>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </div>
+
+      <div class="item edu-background">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
+            Educational Background (2007-2011)
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="school-dates">Christopher Newport University [August 2007 - June 2011]</p>
+          <p class="text-desc">Bachelor of Science – Double major in C.S. and Mathematics</p>
+        </mat-expansion-panel>
+      </div>
+
+      
+      <div class="item prof-background">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
+              Professional Background (2010-Present)
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  SurgeForward
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="title-dates">Senior Software Developer [November 2016 - Current]</p>
+              <div class=text-desc>
+                <p>
+                  As a contractor for SurgeForward I've worked with a variety of clients to design and implement software specific to each of their unique needs.
+                </p>
+                <p>
+                  The role has given me an opportunity to see a variety of development and managerial styles, while allowing me to further expand and deepen my technical repertoire.
+                </p>
+              </div>
+
+              <mat-accordion class="sub-subtitle">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      Vorbeck Materials
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      Vorbeck Materials, in conjunction with KeepGo, are designing a hardware package to allow a user to utilize a purse/bag/backback
+                      as a mobile hotspot, with some fun connectivity and charging features.
+                    </p>
+                    <p>
+                      For this product, I was asked to review and edit the design of a Bluetooth hardware portion of the package,
+                      and proceed with implementation and interfacing with the client mobile app. The implementation was written in C, using Atmel/Microchip software tools and libraries.
+                    </p>
+                    <p>
+                      This functionality included:
+                    </p>
+                    <li style="margin-bottom:1vh">
+                      Bluetooth delivery of a wide array of information concerning the base KeepGo device(power level, WiFi service information, etc.).
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Proximity monitoring of peripheral bluetooth beacons registered with the host device, delivery of this information over bluetooth, and toggling hardware cues(LED patterns) on the host device.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Bluetooth access control and initial setup/registration of peripherals with the host device(and client application).
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      An Over-The-Air update service for both the host device and perhiperhal beacons.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Build scripts for deploying/flashing devices at scale for initial delivery.
+                    </li>
+                  </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      Emory University/Emory Healthcare
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      Emory Healthcare is working to build a set of easily customizable AWS CloudFormation templates to facilitate rapid, user-friendly stand-up of AWS cloud services in environments with HIPAA concerns.
+                    </p>
+                    <p>
+                      We at Surge were brought on to consult them on the structure of their Security Control Policies, and comprehensively test that the policies in place were working as intended.
+                    </p>
+                    <p>
+                      This was done using Python, PyTest, and Boto3, and over the course of 6 months tests were written for nearly every service that AWS offers(there were a few that did not yet have a Boto3 client, thankfully they were non-critical services and could just be blocked).
+                    </p>
+                    <p>
+                      This was a really fun project that allowed me to really hone my own skillset with regards to some the most popular AWS offerings(CloudFormation, EC2, S3, etc),
+                      and I got to work at least a little bit with just about every service and learn a lot about the entire suite.
+                    </p>
+                  </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      DigitalGlobe/Radiant Solutions
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      Radiant Solutions(formerly DigitalGlobe) has built a GIS focused machine learning toolkit(<a target="_blank" rel="noopener noreferrer" href="http://www.deepcore.io">DeepCore</a>)
+                      and I was happy to contribute to a really cool project.
+                    </p>
+                    <p>
+                      The kit is written in C++11 and is designed as a one-stop shop for downloading imagery, performing image classification and/or object detection, and produce geospatial output in a variety of formats.
+                      During my time working on the project, I personally was able to:
+                    </p>
+
+                    <li style="margin-bottom:1vh">
+                      Design and implement geometric utilities acting as a bridge between GDAL, GEOS, and OpenCV.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Design and implement enhancements to the object detection and classification systems, including the addition
+                      of TensorFlow model support.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Enhance geographic Feature/FeatureSet handling to allow for further input/output capabilities for users.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Work on a large overhaul of the processing module to allow for concurrent and asyncronous processing of the E2E pipeline -
+                      from retrieval of data all the way through to the resultant geo output.
+                    </li>
+                  </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      Surge Internal Development
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      When between assignments with clients at Surge, contractors are often given the opportunity to work on products that are maintained internally.
+                    </p>
+                    <p>
+                      I had one short assignment with Surge as such, on the Skills Manager App. This app is used to track the skills that all of their contractors and candidates report.
+                      It is a Vue/Express/SQLServer app, encapsulated within Docker containers, interfacing with a larger user service application that maintains all of the
+                      information on users at Surge, written using Node.
+                    </p>
+                    <p>
+                      I implemented pagination and caching capabilities to the search functionality(pagination added to both on the backend Node server and to the frontend Vue app) and
+                      fixed a bug relating to the way candidates were being filtered.
+                    </p>  
+                  </div>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Metron Scientific Solutions
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="title-dates">Software Analyst and Architect [June 2011 - November 2016]</p>
+              <div class="text-desc">
+                <p>
+                  Starting at Metron was incredibly exicting for me. Fresh out of school, with a job working on some pretty interesting problems.
+                  I was specifically brought on to work on the SAFEGARD project(see below) and over the course of my five years with Metron I went from
+                  being a junior developer on SAFEGARD, to managing the project entirely(with an occasional junior developer working for me).
+                </p>
+                <p>
+                  During this time, I was also able to procure further work for Metron through documenting the possibility additional features(and winning the proposals!),
+                  and also giving a helping hand when needed on some other projects.
+                </p>
+                <p>
+                  The projects I did the most appreciable work on are further detailed below:
+                </p>
+              </div>
+              <mat-accordion class="sub-subtitle">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      SAFEGARD
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      SAFEGARD is a mission level warfare analysis application - naval, air, communications, and sensor assets were modeled with a high level of fidelity to assist in the procurement analysis process for the Navy.
+                    </p>
+                    <p>
+                      SAFEGARD was my first and longest lasting assignment at Metron - I was brought on to be a junior developer on what became a three developer team,
+                      and when I arrived the software design phase had just gotten underway, and the codebase was basically a CMake file. I was elated to be joining a project with a clean slate!
+                    </p>
+                    <p>
+                      The simulation engine is written in C++, with Python(PLY) used to translate user input data,
+                      Java used as a front end and 3D results playback tool(leveraging NASA WorldWind for an OpenGL globe display and panel),
+                      and dynamically generated HTML(leveraging NextReports Engine), in conjunction with jQuery and Javascript used for result output(stored within a PostgreSQL database). With such a small team, we all worked on nearly every module within the project - an effort that took the better part of five years.
+                    </p>
+                    <p>
+                      Later, after the release of version 1.0, I was asked to produce a module which generates documentation for the vast amount of input data that SAFEGARD models require.
+                      This module leveraged the results output module already implemented(using NextReports Engine, dynamically generated HTML, jQuery, and Javascript).
+                      This effort greatly reduced analyst overhead time when designing a mission, and the effort was able to reuse most of the codebase for a similar documentation tool implemented for STORM.
+                    </p>
+                  </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      STORM
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      STORM is a campaign level warfare analysis application, that was something of the father to SAFEGARD - SAFEGARD being a less broad simulation with higher fidelity.
+                    </p>
+                    <p>
+                      Architecture and design of SAFEGARD borrowed very heavily from STORM, and after the release of SAFEGARD v1.0 I was brought on to STORM to make a few additions, leveraging my knowledge of SAFEGARD.
+                    </p>
+                    <p>
+                      The simulation engine is written in C++, and I was asked to produce high level design for a module that would model small boat swarms, and provide guidance to a junior developer on the implementation of the module.
+                    </p>
+                    <p>
+                      I was also asked to produce a documentation module, leveraging what had been written for SAFEGARD.
+                      The effort was able to reuse most of the codebase for the similar documentation tool designed for SAFEGARD. 
+                    </p>
+                  </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      ExAMS
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      ExAMS is an analysis tool(written in Java using the Spring Framework).
+                    </p>
+                    <p>
+                      The tool was used to organize the littany of different sources, formats, and types of data required at a generic level for many military simulations, and architected
+                      to easily allow for development of plugins to utilize those data sources in an abritrary simulation environment.
+                    </p>
+                    <p>
+                      I was brought on to design and develop a plugin to allow for data input from real life hardware, utilizing an HLA methodology.
+                      This plugin allowed for the input data from real life hardware to be passed into an arbitrary simulation environment and be utilized at arbitrary intervals/levels of fidelity.
+                    </p>
+                  </div>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-expansion-panel>
+            
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Thomas Jefferson National Accelerator Facility
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="title-dates">Research Assistant [October 2010 - April 2011]</p>
+              <div class="text-desc">
+                <p>
+                  During my senior year at CNU, I was lucky enough to land an assistantship at Jefferson Lab in Newport News, VA.
+                  So began my love of working with scientists.
+                </p>
+                <p>
+                  As an assistant, I was tasked with helping the group implement and test CUDA versions of various facets of their work to achieve some increased efficiency through parallelization.
+                </p>
+                <p>These efforts included the following:</p>
+
+                <mat-accordion class="sub-subtitle">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
+                            <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                            Implementation of a Kalman filter
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text-desc">
+                        <p>
+                          This effort was largely unsuccessful - the algorithm, generically, does not lend itself well to parallelization. Since my task was specific to paralleization(they had a group specifically working on GPU farming processes), this exploration and initial implementation was a short effort.
+                        </p>
+                        <p>
+                          It was something of a square-peg round-hole situation, but the effort did make for a good exploration into CUDA(outside of some previous classwork I had done).
+                        </p>
+                      </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
+                            <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                            Implementation of a cluster finding algorithm
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text-desc">
+                        <p>
+                          This effort was much more successful than the first. The detector is made up of a large array of sensors used to record the collision. The algorithm for finding clusters of these sensors firing at the same time was quite simple, and allowed for high levels of parallelization.
+                        </p>
+                        <p>
+                          This implementation allowed the group to find clusters within their datasets around 3 times faster than the naive serial implementation.
+                        </p>
+                      </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header collapsedHeight="auto">
+                        <mat-panel-title class="sub-subtitle">
+                            <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                            Implementation of a segment finding algorithm
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                        <div class="text-desc">
+                          <p>
+                            Similar to the cluster finding algorithm - this algorithm for finding segments of these sensors firing at the same time(specifically looking for uncorrelated noise) was quite simple, and allowed for high levels of parallelization.
+                          </p>
+                          <p>
+                            This implementation allowed the group to find and remove noise from their datasets on the order of 1000 times faster than the naive serial implementation.
+                          </p>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header collapsedHeight="auto">
+                <mat-panel-title class="subtitle">
+                  Before It All Began(or How I Learned to Have a Job)
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="text-desc">
+                <p>
+                  This section isn't of interest to everyone - it doesn't appear on my actual resume, my LinkedIn, or really anywhere that I can't tuck it into an expansion panel.
+                </p>
+                <p>
+                  But it is to me, so here it is. I feel I owe large part of my work ethic and drive from first learning to have a job, before attempting to build a career. I am proud of how I was able to do so, in tandem with working toward my educational goals.
+                </p>
+                <p>
+                  My first job was at the ripe age of 15, working for a small pet shop called Wally's Aquarium(catering specifically to aquarium owners) in Alexandria, VA. 
+                  Along with traditional retail duties(register work, stocking shelves, etc.) I cleaned and scraped dirty tanks, helped customers find what they needed and educated them about the various lives they were about to be in care of.
+                  I look back on my time at this job incredibly fondly, and still to this day have an affinity for aquariums(my wife and I make a point of visiting public aquariums whenever we travel!).
+                </p>
+                <p>
+                  From there, I only took on one more retail job(teen clothing store over a holiday is NOT a job I look back at fondly), and worked my way through college as a server at a handful of restaurants.
+                  For viewers who've worked in restaurants, you'll understand that working as a server was an incredible learning experience in patience, civility, and time and stress management.
+                  For those who haven't, I hope you appreciate the work done by everyone in restaurants to make your night out as best as possible.
+                </p>
+                <p>
+                  And the rest is history.
+                </p>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </div>
+
+      <div class="item resume-downloads">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
+              Downloads
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <button *ngFor="let item of RESUME_FORMATS" (click)="downloadResume()">
+              Download as {{ item }}
+          </button>
+        </mat-expansion-panel>
+      </div>
+    </div>
+  </mat-accordion>
+</div>
