@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent, CodeComponent, ResumeComponent, FunComponent } from './app.component';
+import { CodeComponent } from './code/code.component';
+import { FunComponent } from './fun/fun.component';
+import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },

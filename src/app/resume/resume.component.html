@@ -103,19 +103,6 @@
           </mat-accordion>
         </mat-expansion-panel>
       </div>
-
-      <div class="item edu-background">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header collapsedHeight="auto">
-            <mat-panel-title class="main-panel-title">
-            Educational Background (2007-2011)
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p class="school-dates">Christopher Newport University [August 2007 - June 2011]</p>
-          <p class="text-desc">Bachelor of Science – Double major in C.S. and Mathematics</p>
-        </mat-expansion-panel>
-      </div>
-
       
       <div class="item prof-background">
         <mat-expansion-panel>
@@ -131,7 +118,8 @@
                   SurgeForward
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <p class="title-dates">Senior Software Developer [November 2016 - Current]</p>
+              <p class="title-dates">Senior Software Developer / Independent contractor</p>
+              <p class="title-dates">[November 2016 - Current]</p>
               <div class=text-desc>
                 <p>
                   As a contractor for SurgeForward I've worked with a variety of clients to design and implement software specific to each of their unique needs.
@@ -142,6 +130,40 @@
               </div>
 
               <mat-accordion class="sub-subtitle">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="auto">
+                    <mat-panel-title class="sub-subtitle">
+                      <mat-icon matListIcon style="margin-right:10px">note</mat-icon>
+                      San Francisco Aids Foundation
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="text-desc">
+                    <p>
+                      SFAF was in need of an overhaul of their housing subsidy management system, in the form of an entirely new application. In short, the system was used to track clients seeking a housing subsidy from the foundation and calculate their eligibility for various programs.
+                    </p>
+                    <p>
+                      For this application, I worked closely with SFAF to determine the functionality required of the old application while trimming the rest, as there was a lot of existing functionality they did not need, and the application was closed source.
+                    </p>
+                    <p>
+                      This was really fun to write as I was working the full stack with a completely clean slate, and was able to put together a much cleaner, lightweight app for the foundation to use.
+                    </p>
+                    <p>
+                      The application included:
+                    </p>
+                    <li style="margin-bottom:1vh">
+                      A SQL Server database for storing client information and configurable(with administrative privileges) subsidy calculation parameters.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      A RESTful Node/Express.js backend with authentication handled via JWT and through a configurable Active Directory connection.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      An Angular 7 frontend with login/authentication, client registration, income reporting, subsidy status reporting, subsidy calculations and historical data, an administrative panel, and client search capabilities.
+                    </li>
+                    <li style="margin-bottom:1vh">
+                      Tested and deployed internally at SFAF on Windows Server with IIS.
+                    </li>
+                  </div>
+                </mat-expansion-panel>
                 <mat-expansion-panel>
                   <mat-expansion-panel-header collapsedHeight="auto">
                     <mat-panel-title class="sub-subtitle">
@@ -268,7 +290,8 @@
                   Metron Scientific Solutions
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <p class="title-dates">Software Analyst and Architect [June 2011 - November 2016]</p>
+              <p class="title-dates">Software Analyst and Architect</p>
+              <p class="title-dates">[June 2011 - November 2016]</p>
               <div class="text-desc">
                 <p>
                   Starting at Metron was incredibly exicting for me. Fresh out of school, with a job working on some pretty interesting problems.
@@ -364,7 +387,8 @@
                   Thomas Jefferson National Accelerator Facility
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <p class="title-dates">Research Assistant [October 2010 - April 2011]</p>
+              <p class="title-dates">Research Assistant</p>
+              <p class="title-dates">[October 2010 - April 2011]</p>
               <div class="text-desc">
                 <p>
                   During my senior year at CNU, I was lucky enough to land an assistantship at Jefferson Lab in Newport News, VA.
@@ -436,7 +460,7 @@
               </mat-expansion-panel-header>
               <div class="text-desc">
                 <p>
-                  This section isn't of interest to everyone - it doesn't appear on my actual resume, my LinkedIn, or really anywhere that I can't tuck it into an expansion panel.
+                  This section isn't of interest to everyone - it doesn't appear on my actual resume, my LinkedIn, or really anywhere other than here.
                 </p>
                 <p>
                   But it is to me, so here it is. I feel I owe large part of my work ethic and drive from first learning to have a job, before attempting to build a career. I am proud of how I was able to do so, in tandem with working toward my educational goals.
@@ -457,6 +481,18 @@
               </div>
             </mat-expansion-panel>
           </mat-accordion>
+        </mat-expansion-panel>
+      </div>
+
+      <div class="item edu-background">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header collapsedHeight="auto">
+            <mat-panel-title class="main-panel-title">
+            Educational Background (2007-2011)
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="school-dates">Christopher Newport University</p>
+          <p class="text-desc">Bachelor of Science – Double major in C.S. and Mathematics</p>
         </mat-expansion-panel>
       </div>
 
