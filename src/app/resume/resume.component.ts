@@ -22,7 +22,7 @@ export class ResumeComponent extends BaseComponent {
     'Java',
     'C#',
     'HTML',
-    'CSS/SCSS',
+    'CSS',
   ].sort(caseInsensitiveSort);
 
   readonly APIS_LIBRARIES_FRAMEWORKS = [
